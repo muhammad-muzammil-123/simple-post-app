@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h1 class="heading1">Post App</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="p-4">
+                <div class="card p-5">
+          
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                    <div class=" images-list d-flex">
+                        <img class="bg-image"  onclick="selectImage('./images/image1.avif')"  src="./images/image1.avif" alt="">
+                        <img class="bg-image" onclick="selectImage('./images/image2.jpg')" src="./images/image2.jpg" alt="">
+                        <img class="bg-image" onclick="selectImage('./images/iamge3.avif')" src="./images/iamge3.avif" alt="">
+                        <img class="bg-image" onclick="selectImage('./images/image4.jpg')" src="./images/image4.jpg" alt="">
+                        <img class="bg-image" onclick="selectImage('./images/image5.jpg')"  src="./images/image5.jpg" alt="">
+                        <img class="bg-image" onclick="selectImage('./images/image6.jpg')" src="./images/image6.jpg" alt="">
+                        <img class="bg-image" onclick="selectImage('./images/image7.jpg')" src="./images/image7.jpg" alt="">
+                    </div>
+                  </div>
+                
+                <button type="submit" onclick="post()" class="btn btn-primary">Post</button>
+              
+            </div>
+            </div>
+        </div>
+        <div class="col-8"></div>
+    </div>
+</div>
+<div class="postText">
+   
+
+
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
